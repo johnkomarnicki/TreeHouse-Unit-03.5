@@ -222,6 +222,7 @@ form {
 
   .form-control label {
     max-width: 220px;
+    align-self: center;
   }
 
   .form-control input,
