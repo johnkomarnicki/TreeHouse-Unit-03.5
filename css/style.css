@@ -1,0 +1,232 @@
+/* Base Styles ------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+input,
+select,
+textarea {
+  color: #6d7070;
+  padding: 1rem;
+  background-color: #e4e7ed;
+  border-radius: 5px;
+  transition: 500ms ease;
+}
+
+select {
+  height: 54px;
+}
+
+textarea {
+  width: 100%;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+  transition: 500ms ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+input[type="checkbox"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+  outline: none;
+  box-shadow: none;
+}
+
+.required::placeholder {
+  text-align: right;
+  color: #adafb3;
+  font-style: italic;
+  font-size: 12px;
+  padding-right: 5px;
+}
+
+button {
+  transition: 500ms ease;
+  display: block;
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1.275rem;
+  padding: 1rem;
+  background-color: #45608c;
+}
+
+button:hover {
+  transition: 500ms ease;
+  background-color: #e0e0e0;
+  color: #45608c;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #adafb3;
+  font-style: italic;
+}
+
+/* Custom Class Styles ------------ */
+
+.header-wrap,
+form {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.company {
+  font-size: 1.35rem;
+  margin-top: 0;
+  padding: 2rem;
+  background-color: #45608c;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.title,
+.form-title {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #45608c;
+}
+
+.info {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #b9bfc9;
+}
+
+.form-control,
+.legend-wrap,
+.news-control {
+  display: flex;
+}
+
+.form-title {
+  align-self: center;
+}
+
+.form-control {
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-control input {
+  flex: 1;
+}
+
+.form-control label {
+  flex: 1;
+}
+
+.news-label {
+  display: block;
+}
+
+.news-control {
+  color: #6d7070;
+  font-weight: 300;
+  font-size: 0.975rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+.news-control label {
+  color: #838787;
+  font-weight: 300;
+  align-self: center;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.news-control input {
+  height: 22px;
+  width: 22px;
+}
+
+/* DRY ------------ */
+
+.number {
+  background-color: #45608c;
+  color: #fff;
+  height: 34px;
+  width: 34px;
+  display: inline-block;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.border {
+  border-bottom: 4px solid #45608c;
+}
+
+.border-2 {
+  margin-top: 5px;
+  border-bottom: 2px solid #45608c;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .header-wrap,
+  form {
+    margin: 0 auto;
+    max-width: 768px;
+  }
+
+  .form-control {
+    flex-direction: row;
+  }
+
+  .form-control label {
+    max-width: 220px;
+  }
+
+  .form-control input,
+  .form-control select {
+    justify-content: flex-start;
+    flex: 2;
+  }
+}
