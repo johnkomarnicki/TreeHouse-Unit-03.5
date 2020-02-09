@@ -36,15 +36,8 @@ textarea {
 input:focus,
 textarea:focus,
 select:focus {
-  outline: none;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-input:hover,
-textarea:hover,
-select:hover {
   transition: 500ms ease;
+  outline: none;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
@@ -136,6 +129,11 @@ form {
   margin-bottom: 1rem;
 }
 
+.form-control input[type="number"] {
+  flex: none;
+  width: 30%;
+}
+
 .form-control input {
   flex: 1;
 }
@@ -225,7 +223,6 @@ form {
     align-self: center;
   }
 
-  .form-control input,
   .form-control select {
     justify-content: flex-start;
     flex: 2;

@@ -30,9 +30,9 @@
       <fieldset class="information">
         <div class="legend-wrap mt-2 mb-2 ">
           <span class="number">1</span>
-          <legend class="form-title">
+          <p class="form-title">
             Contact Informaiton
-          </legend>
+          </p>
         </div>
 
         <div class="form-control">
@@ -42,6 +42,7 @@
             type="text"
             id="name"
             name="user_name"
+            required
             placeholder="Required"
           />
         </div>
@@ -53,6 +54,7 @@
             type="email"
             id="email"
             name="user_email"
+            required
             placeholder="Required"
           />
         </div>
@@ -74,7 +76,7 @@
 
         <div class="form-control">
           <label for="state">State:</label>
-          <select name="user_state" id="state" aria-placeholder="Select">
+          <select name="user_state" id="state">
             <option value="0">Select State</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
@@ -141,9 +143,9 @@
       <fieldset class="newsletter">
         <div class="legend-wrap mt-2 mb-2 ">
           <span class="number">2</span>
-          <legend class="form-title">
+          <p class="form-title">
             Newsletter
-          </legend>
+          </p>
         </div>
 
         <label class="news-label mb-1"
